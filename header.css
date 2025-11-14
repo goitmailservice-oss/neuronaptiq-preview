@@ -1,0 +1,81 @@
+div.headerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: #0c121a;
+  position: fixed;
+  z-index: 9999;
+}
+div.headerContainer div.headerLogo {
+  width: 33.333333%;
+}
+div.headerContainer div.headerLogo a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+div.headerContainer div.headerLogo a img {
+  padding: 10px;
+}
+div.headerContainer .headerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+div.headerContainer .headerNav .headerNavInner {
+  display: flex;
+}
+div.headerContainer .headerNav .headerNavInner > span {
+  position: relative;
+}
+div.headerContainer .headerNav .headerNavInner > span a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+div.headerContainer .headerNav .headerNavInner > span a:hover {
+  color: #57bbc2;
+}
+div.headerContainer .headerNav .headerNavInner > span > span {
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 15px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 120px 8px 8px;
+  z-index: 99;
+}
+div.headerContainer .headerNav .headerNavInner > span > span a {
+  display: block;
+  padding: 10px 16px;
+  color: #000;
+  white-space: nowrap;
+}
+div.headerContainer .headerNav .headerNavInner > span:hover span {
+  display: block;
+}
+div.headerContainer div.headerIcons {
+  width: 33.333333%;
+  display: flex;
+  justify-content: flex-end;
+}
+div.headerContainer div.headerIcons a {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+div.headerContainer div.headerIcons a:hover {
+  background-color: #495057;
+  border-radius: 10px;
+}/*# sourceMappingURL=header.css.map */

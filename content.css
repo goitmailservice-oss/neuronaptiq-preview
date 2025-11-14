@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  background: #0e1620;
+  overflow-x: clip;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------- */
+div.firstImpressionText {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 150px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+div.firstImpressionText div.lineFirstImpression1 span {
+  background-color: #272e37;
+  border-radius: 90px;
+  padding: 80px 330px;
+  position: absolute;
+  rotate: -40deg;
+  right: -290px;
+  top: 140px;
+  z-index: 10;
+}
+div.firstImpressionText div.lineFirstImpression2 span {
+  background-color: #272e37;
+  border-radius: 90px;
+  padding: 80px 300px;
+  position: absolute;
+  bottom: 0px;
+  right: 1300px;
+  rotate: 40deg;
+  z-index: 10;
+}
+div.firstImpressionText div.firstImpressionTextInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+div.firstImpressionText div.firstImpressionTextInner span {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 150px 0 20px 0;
+}
+div.firstImpressionText div.firstImpressionTextInner em {
+  flex-wrap: wrap;
+  font-style: normal;
+  text-align: center;
+}
+div.firstImpressionText div.firstImpressionTextInner em strong {
+  font-size: 25px;
+  line-height: 40px;
+}
+div.firstImpressionText div.firstImpressionTextInner em strong:first-child {
+  color: #000;
+  font-weight: bold;
+}
+div.firstImpressionText div.firstImpressionTextInner em strong:nth-child(2) {
+  color: #495057;
+  font-weight: normal;
+}
+div.firstImpressionText div.firstImpressionTextInner em strong:nth-child(3) {
+  color: #000;
+  font-weight: bold;
+}
+div.firstImpressionText div.firstImpressionTextInner em strong:last-child {
+  color: #495057;
+  font-weight: normal;
+}
+div.firstImpressionText div.firstImpressionBoxInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-top: 100px;
+  z-index: 100;
+}
+div.firstImpressionText div.firstImpressionBoxInner div.firstImpressionBoxInnerBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  margin: 0 25px;
+  padding: 25px 50px 25px 25px;
+  border-radius: 20px;
+}
+div.firstImpressionText div.firstImpressionBoxInner div.firstImpressionBoxInnerBox span:first-child {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------- */
+div.productContainer {
+  width: 100%;
+  background-color: #0e1620;
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  position: relative;
+}
+div.productContainer div.productBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+div.productContainer div.productBoxContainer div.productBox {
+  width: 26%;
+  margin: 10px 10px;
+  background-color: #272e37;
+  border-radius: 20px;
+  padding: 30px;
+}
+div.productContainer div.productBoxContainer div.productBox div.productBoxTop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+div.productContainer div.productBoxContainer div.productBox div.productBoxTop div.imgBox {
+  background-color: #292a2f;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+div.productContainer div.productBoxContainer div.productBox div.productBoxTop div.imgBox img {
+  display: block;
+}
+div.productContainer div.productBoxContainer div.productBox div.productBoxTop span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+div.productContainer div.productBoxContainer div.productBox span {
+  color: #95a2b0;
+  font-weight: 500;
+}
+div.productContainer div.productBoxContainer div.productBox a {
+  color: #57bbc2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+div.productContainer div.productBoxContainer div.productBox a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------- */
+.sliderContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.sliderWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  cursor: grab;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  text-align: center;
+}
+
+.brand-item img {
+  margin: 0;
+}
+
+.brand-item:hover {
+  transform: scale(1.05);
+}
+
+.brand-image {
+  width: 120px;
+  height: 70px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.slider-wrapper.active {
+  cursor: grabbing;
+}
+
+/* --------------------------------------------------------- */
+div.videoRow {
+  display: flex;
+  justify-content: center;
+  background-color: #0e1620;
+  padding: 130px 0;
+}
+div.videoRow div.referenzBox {
+  width: 25%;
+  margin: 0 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+div.videoRow div.referenzBox a {
+  text-decoration: none;
+}
+div.videoRow div.referenzBox a div.videoBox video {
+  border-radius: 20px 20px 0 0;
+}
+div.videoRow div.referenzBox a div.referenzText {
+  display: flex;
+  flex-direction: column;
+  background-color: #272e37;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 20px;
+}
+div.videoRow div.referenzBox a div.referenzText span:first-child {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+div.videoRow div.referenzBox a div.referenzText span:last-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+/* --------------------------------------------- */
+div.contactBoxFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0e1620;
+  border-bottom: 1px solid #95a2b0;
+  position: relative;
+}
+div.contactBoxFooter div.lineContactFooter span {
+  background-color: #272e37;
+  border-radius: 90px;
+  padding: 80px 300px;
+  position: absolute;
+  rotate: -40deg;
+  right: -350px;
+  top: -14px;
+}
+div.contactBoxFooter div.contactBoxFooterInner {
+  padding: 80px 0;
+  z-index: 10;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterText span:first-child {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterText span:last-child {
+  font-size: 30px;
+  color: #95a2b0;
+  margin-top: 20px;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput {
+  display: flex;
+  justify-content: space-between;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput input {
+  width: 300px;
+  height: 80px;
+  background-color: #272e37;
+  border: none;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput input::-moz-placeholder {
+  color: #95a2b0;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput input::placeholder {
+  color: #95a2b0;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput button {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0 125px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #57bbc2;
+  color: #fff;
+  border: none;
+  transition: background-color 0.1s ease;
+}
+div.contactBoxFooter div.contactBoxFooterInner div.contactBoxFooterInput button:hover {
+  background-color: #7fd0d5;
+}/*# sourceMappingURL=content.css.map */
